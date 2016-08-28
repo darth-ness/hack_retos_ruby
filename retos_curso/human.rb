@@ -6,50 +6,63 @@
 #     Los atributos pueden ser leídos más no sobreescritos.
 #
 class Human
-  attr_reader :name, :lastname, :age, :weight, :happiness
+  attr_reader :name, :lastname, :weight, :height, :happiness
   # attr_accessor
 
-  def initialize name, lastname, age, weight
+  def initialize name, lastname, weight
     @name = name
     @lastname = lastname
-    @age = age
+    @height = 1.70
     @weight = weight
-    @happiness = true
+    @happiness = @weight > 70 && @weight < 80? true : false
   end
-end
 
-def eat
-  self.weight += 2
-  self.happiness = true
-  mood = @happiness? "feliz!" : "triste..."
-  puts "#{name} esta #{mood}"
-  puts "Ahora pesa #{weight} kgs"
-end
+  def tell_status
+    puts "#{name} #{lastname} mide #{height}mts y pesa #{weight}kgs."
+    look_happiness
+  end
 
-def excersise
-  @weight -= 2
-  @happiness = true
-  mood = @happiness? "feliz!" : "triste..."
-  puts "#{name} esta #{mood}"
-  puts "Ahora pesa #{weight} kgs"
-end
+  def eat
+    @weight += 2
+    look_happiness
+  end
 
-def diet
-  @weight -= 2
-  @happiness = false
-  mood = @happiness? "feliz!" : "triste..."
-  puts "#{name} esta #{mood}"
-  puts "Ahora pesa #{weight} kgs"
-end
+  def excersise
+    @weight -= 2
+    look_happiness
+  end
 
-def turn_year
-  @age += 1
-  @happiness = false
-  mood = @happiness? "feliz!" : "triste..."
-  puts "#{name} esta #{mood}"
-  puts "Ahora tiene #{age} años"
-end
+  def diet
+    @weight -= 2
+    look_happiness
+  end
 
-def tell_human_status
+  def status
+    puts
+  end
 
+  private
+
+  def mood
+    mood = @happiness? "feliz!" : "triste..."
+  end
+
+  def look_happiness
+    if weight <= 70
+      @happiness = false
+      mood
+      puts "#{name} esta #{mood}, debe comer mas!"
+      puts "Esta pesando #{weight}kgs"
+    elsif weight >= 80
+      @happiness = false
+      mood
+      puts "#{name} esta #{mood}, debe hacer ejercicios o dieta!"
+      puts "Esta pesando #{weight}kgs"
+    else
+      @happiness = true
+      mood
+      puts "#{name} esta #{mood}! esta en su peso ideal!"
+      puts "Esta pesando #{weight}kgs"
+    end
+  end
 end
