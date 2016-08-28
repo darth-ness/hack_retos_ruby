@@ -6,21 +6,21 @@
 #     Los atributos pueden ser leídos más no sobreescritos.
 #
 class Human
-  attr_reader(:name, :lastname, :age, :weight, :happiness)
+  attr_reader :name, :lastname, :age, :weight, :happiness
   # attr_accessor
 
-  def initialize(attributes = {})
-    @name = attributes[:name]
-    @lastname = attributes[:lastname]
-    @age = attributes[:age]
-    @weight = attributes[:weight]
+  def initialize name, lastname, age, weight
+    @name = name
+    @lastname = lastname
+    @age = age
+    @weight = weight
     @happiness = true
   end
 end
 
 def eat
-  @weight += 2
-  @happiness = true
+  self.weight += 2
+  self.happiness = true
   mood = @happiness? "feliz!" : "triste..."
   puts "#{name} esta #{mood}"
   puts "Ahora pesa #{weight} kgs"
@@ -48,4 +48,8 @@ def turn_year
   mood = @happiness? "feliz!" : "triste..."
   puts "#{name} esta #{mood}"
   puts "Ahora tiene #{age} años"
+end
+
+def tell_human_status
+
 end
