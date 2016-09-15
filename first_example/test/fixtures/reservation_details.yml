@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  reservaiion: one
+  vehicle: one
+  price: 9.99
+
+two:
+  reservaiion: two
+  vehicle: two
+  price: 9.99

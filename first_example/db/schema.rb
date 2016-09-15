@@ -10,13 +10,52 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160914195137) do
+ActiveRecord::Schema.define(version: 20160915195526) do
+
+  create_table "agencies", force: :cascade do |t|
+    t.string   "name"
+    t.text     "address"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "articles", force: :cascade do |t|
     t.string  "title"
     t.text    "body"
     t.integer "user_id"
     t.index ["user_id"], name: "index_articles_on_user_id"
+  end
+
+  create_table "clients", force: :cascade do |t|
+    t.string   "dni"
+    t.string   "name"
+    t.string   "lastname"
+    t.string   "phone"
+    t.text     "address"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "costs", force: :cascade do |t|
+    t.decimal  "price"
+    t.date     "date"
+    t.integer  "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "countries", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "population"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "garages", force: :cascade do |t|
+    t.string   "name"
+    t.text     "address"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "playlists", force: :cascade do |t|
@@ -26,11 +65,52 @@ ActiveRecord::Schema.define(version: 20160914195137) do
     t.index ["user_id"], name: "index_playlists_on_user_id"
   end
 
+  create_table "reservation_details", force: :cascade do |t|
+    t.integer  "reservaiion_id"
+    t.integer  "vehicle_id"
+    t.decimal  "price"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.index ["reservaiion_id"], name: "index_reservation_details_on_reservaiion_id"
+    t.index ["vehicle_id"], name: "index_reservation_details_on_vehicle_id"
+  end
+
+  create_table "reservations", force: :cascade do |t|
+    t.date     "pickup_date"
+    t.date     "delivery"
+    t.date     "reservation"
+    t.integer  "status"
+    t.integer  "client_id"
+    t.integer  "agency_id"
+    t.decimal  "total"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["agency_id"], name: "index_reservations_on_agency_id"
+    t.index ["client_id"], name: "index_reservations_on_client_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string  "name"
     t.string  "address"
     t.integer "phone"
     t.string  "dni"
+  end
+
+  create_table "vehicle_types", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "vehicles", force: :cascade do |t|
+    t.string   "brand"
+    t.string   "model"
+    t.string   "register"
+    t.string   "color"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.integer  "vehicle_type_id"
+    t.index ["vehicle_type_id"], name: "index_vehicles_on_vehicle_type_id"
   end
 
 end
