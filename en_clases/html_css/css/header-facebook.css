@@ -1,3 +1,16 @@
-.header {
+body {
+  margin: 0;
+
+}
+.container {
   background-color: purple;
+
+}
+.search-utilities {
+  padding-left: 85px;
+  padding-top: 5px;
+  padding-bottom: 1px;
+
+}
+.logo {
 }
