@@ -1,0 +1,22 @@
+
+header {
+  border: solid 1px;
+}
+
+.back-container {
+  border: solid 1px;
+
+}
+
+.profile-container {
+  border: solid 1px;
+  display: inline-block;
+  width: 50%
+}
+
+.text-container {
+  border: solid 1px;
+  display: inline-block;
+
+}
+

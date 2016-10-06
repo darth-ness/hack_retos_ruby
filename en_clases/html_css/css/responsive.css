@@ -1,0 +1,22 @@
+.figure {
+  width: 100px;
+  height: 100px;
+  border: 10px  solid red;  
+  left: 50%;
+  position: absolute;
+  background: orange;
+  transform: rotate(45deg);
+  top: 40%;
+}
+
+@media screen and (min-width: 600px) {
+  .figure {
+  width: 100px;
+  height: 100px;
+  border: 10px  solid red;  
+  left: 50%;
+  position: absolute;
+  background: orange;
+  top: 40%;
+  }
+}
