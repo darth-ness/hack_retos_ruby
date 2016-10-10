@@ -1,0 +1,36 @@
+.input {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    position: relative;
+}
+
+.input input {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 9999;
+}
+
+.input span:before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-image: url('https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/11828662_10206381038017800_2528450993230638766_n.jpg?oh=9b4e2c0f2f2fb80bc7d48d7692baafa6&oe=585FFDBA');
+	background-size: cover;
+	display: block;
+	opacity: 0;
+}
+
+.input input:checked + span:before {
+	opacity: 1;
+}
+
+.input input:focus + span:before {
+	opacity: 0.5;
+}
