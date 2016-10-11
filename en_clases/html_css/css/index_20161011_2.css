@@ -1,0 +1,33 @@
+
+/*.logo-img {
+  display: block;
+}*/
+
+.nav-height {
+  height: 182px;
+  padding-left: 105px;
+  padding-right: 108px;
+}
+
+.corp-name {
+  float: right;
+  text-align: right;
+  padding-top: 15px;
+}
+
+.color-corp {
+  color: #FF4C00;
+}
+
+.corp-name-container {
+  font-weight: bold;
+  color: #4A4F55;
+}
+
+.tabulators {
+  height: 182px;
+  padding-left: 105px;
+  padding-right: 108px;
+}
+
+}
