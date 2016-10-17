@@ -1,0 +1,2 @@
+class Phonebook < ApplicationRecord
+end
