@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Bootstrap Combination</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <h1 class="text-center">
+              Angel Alarcon
+            </h1>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4 col-sm-offset-4">
+                  <img class="img-responsive" src="https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/1238720_10155661139865032_6713706139535976024_n.jpg?oh=2e1676855259396742ca372f12bbf569&oe=58A3F5BD" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1 class="text-center">
+              Angel Alarcon
+            </h1>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4 col-sm-offset-4">
+                  <img class="img-responsive" src="https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/10304350_10154390623125032_6521430817379261537_n.jpg?oh=d98cfcae2abf6f0a7005b1954e21908b&oe=58707516" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1 class="text-center">
+              Angel Alarcon
+            </h1>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4 col-sm-offset-4">
+                  <img class="img-responsive" src="https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/424721_10152847298010032_1687272388_n.jpg?oh=1225dce038ff9f51c0fe669865c9c776&oe=58A5834E" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs nav-justified" role="tablist">
+        <li role="presentation" class="active">
+          <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a>
+        </li>
+        <li role="presentation">
+          <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a>
+        </li>
+        <li role="presentation">
+          <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Action <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="container-fluid">
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="home">
+            <h1>1</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque temporibus vero nostrum fuga repellendus laborum minus! Quidem eveniet sapiente ab ullam quo, rem sequi quod quos tenetur dolorum nisi, nesciunt.
+            </p>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="profile">
+            <h1>2</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et obcaecati deleniti assumenda provident mollitia eveniet, dolorum saepe laudantium id minima, quis illum! Ipsa similique suscipit, aperiam maiores culpa dignissimos.
+            </p> 
+          </div>
+          <div role="tabpanel" class="tab-pane" id="messages">
+            <h1>3</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis consequatur, explicabo praesentium, omnis minus voluptatibus assumenda quam odio quod quasi perferendis similique velit inventore dolore, recusandae laboriosam doloribus ea tempore.
+            </p>  
+          </div>
+        </div>
+        <a class="btn btn-primary btn-block" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Collapse
+        </a>
+        <div class="collapse" id="collapseExample">
+          <!-- Button trigger modal -->
+          <p class="text-center">
+            <br>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+              Open <br>
+              Modal
+            </button>
+            <br>
+          </p>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-responsive" src="https://scontent-ord1-1.xx.fbcdn.net/v/l/t1.0-9/398086_10152456310380032_1880070156_n.jpg?oh=3f78dd4a9276489234013f92cc877754&oe=58A579CF" alt="">
+                  <h1 class="text-center">
+                    Angel Alarcon
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="js/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,70 @@
+le pones un width: 100px por ejemplo con hover
+
+[8:05]  
+y eso hace que se ponga de ese tamaño cuando le pones el mouse por encima
+
+[8:05]  
+y luego transition: width 0.6s al elemento
+
+overflow hidden
+
+######
+
+bueno ahora crea esto..
+
+[9:46]  
+.initial > div > li.active > a > p.no-visibility {
+   width: 143px;
+   height: 50px;
+   display: inherit;
+}
+
+[9:47]  
+te en cuenta que .initial es una clase que agregue en el <ul class="nav nav-tabs">
+
+[9:48]  
+y que cada li lo encerre en un div
+
+Néstor Argüello [9:48 PM]  
+ok
+
+[9:48]  
+y el p.no-visibility?
+
+Jose Berrios [9:48 PM]  
+umnm ya va
+
+[9:49]  
+ese no es ya va jajaj
+
+[9:49]  
+el que envie es para que se quede el nombre cuando lo seleccionas, por si alguien lo necesita
+
+
+nav-tabs > div > li:hover > a{
+ width: 100%;
+ height: 100%;
+ border-radius: 10px;
+ background: #337AB7 ;
+ border: 0px;
+ color: white;
+ text-decoration:none;
+}
+
+[9:51]  
+usa ese para ver
+
+[9:52]  
+ya lo acomode para que solo tengas que encerrar los li en div
+
+##############
+hey a la imagen poganle un visibility: hidden;
+
+[10:04]  
+eso la oculta de todos los elementos
+
+[10:04]  
+despues cuando quieren que aparezca
+
+[10:04]  
+visibility: visible;
