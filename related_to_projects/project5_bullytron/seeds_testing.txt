@@ -1,0 +1,58 @@
+person = Person.create(first_name:"Alejandro", last_name: "Chiossone", photo:"http://www.agapox.com.ve/sendalacra/alejandrochiossone.png")
+
+person = Person.create(first_name:"Bruno", last_name: "Colmenares", photo:"http://www.agapox.com.ve/sendalacra/brunocolmenares.png")
+
+person = Person.create(first_name:"Bulissa", last_name: "Albo", photo:"http://www.agapox.com.ve/sendalacra/bulissaalbo.png")
+
+person = Person.create(first_name:"Daniel", last_name: "Castrillo", photo:"http://www.agapox.com.ve/sendalacra/danielcastrillo.png")
+
+person = Person.create(first_name:"Daniel", last_name: "Colas", photo:"http://www.agapox.com.ve/sendalacra/danielcolas.png")
+
+person = Person.create(first_name:"Edkaryd", last_name: "Jimenez", photo:"http://www.agapox.com.ve/sendalacra/edkarydjimenez.png")
+
+person = Person.create(first_name:"Hosward", last_name: "Villoria", photo:"http://www.agapox.com.ve/sendalacra/hoswardvilloria.png")
+
+person = Person.create(first_name:"Isaac", last_name: "Lopez", photo:"http://www.agapox.com.ve/sendalacra/isaaclopez.png")
+
+person = Person.create(first_name:"Jose", last_name: "Berrios", photo:"http://www.agapox.com.ve/sendalacra/joseberrios.png")
+
+person = Person.create(first_name:"Jose", last_name: "Ramírez", photo:"http://www.agapox.com.ve/sendalacra/joseramirez.png")
+
+person = Person.create(first_name:"Luis", last_name: "Peraza", photo:"http://www.agapox.com.ve/sendalacra/luisperaza.png")
+
+person = Person.create(first_name:"Mariana", last_name: "Legonia", photo:"http://www.agapox.com.ve/sendalacra/marianalegonia.png")
+
+person = Person.create(first_name:"Miguel", last_name: "Jaimes", photo:"http://www.agapox.com.ve/sendalacra/migueljaimes.png")
+
+person = Person.create(first_name:"Miguel", last_name: "Salas", photo:"http://www.agapox.com.ve/sendalacra/miguelsalas.png")
+
+person = Person.create(first_name:"Nestor", last_name: "Arguello", photo:"http://www.agapox.com.ve/sendalacra/nestorarguello.png")
+
+person = Person.create(first_name:"Oswaldo", last_name: "Gomez", photo:"http://www.agapox.com.ve/sendalacra/oswaldogomez.png")
+
+person = Person.create(first_name:"Rafael", last_name: "Figueredo", photo:"http://www.agapox.com.ve/sendalacra/rafaelfigueredo.png")
+
+person = Person.create(first_name:"Robert", last_name: "Willians", photo:"http://www.agapox.com.ve/sendalacra/robertwillians.png")
+
+person = Person.create(first_name:"Salvador", last_name: "Campanella", photo:"http://www.agapox.com.ve/sendalacra/salvadorcampanella.png")
+
+person = Person.create(first_name:"Simon", last_name: "Bermudez", photo:"http://www.agapox.com.ve/sendalacra/simonbermudez.png")
+
+person = Person.create(first_name:"Yense", last_name: "Ogando", photo:"http://www.agapox.com.ve/sendalacra/yenseogando.png")
+
+21.times do |i|
+
+  21.times do |j|
+
+    if i!=j
+
+      bullying = Bullying.create(bully_id: (i+1), bulled_id: (j+1), description: "bully: #{i+1} => bulled: #{j+1}", the_best: false)
+
+    else
+
+    end
+
+  end
+
+end
+
