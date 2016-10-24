@@ -10,32 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160924225907) do
-
-  create_table "line_items", force: :cascade do |t|
-    t.integer  "order_id"
-    t.integer  "product_id"
-    t.integer  "quantity"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["order_id"], name: "index_line_items_on_order_id"
-    t.index ["product_id"], name: "index_line_items_on_product_id"
-  end
-
-  create_table "orders", force: :cascade do |t|
-    t.string   "delivery_address"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
-  end
+ActiveRecord::Schema.define(version: 20161024042930) do
 
   create_table "products", force: :cascade do |t|
     t.string   "name"
-    t.decimal  "price",           precision: 7, scale: 2
-    t.datetime "created_at",                              null: false
-    t.datetime "updated_at",                              null: false
-    t.integer  "weight"
-    t.boolean  "in_stock"
-    t.date     "expiration_date"
+    t.decimal  "price",      precision: 7, scale: 2
+    t.datetime "created_at",                         null: false
+    t.datetime "updated_at",                         null: false
   end
 
 end
