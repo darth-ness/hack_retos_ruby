@@ -1,9 +1,9 @@
 function Order(restaurant, table) {
   var current_client = restaurant.client_line.shift();
-  table.push(current_client);
-  // console.log(table);
+  table[0] = current_client;
   var client = table[0];
-  client.eat();
+  // console.log(client);
+  // client.eat();
   console.log("Cliente " + client.name + " comiendo...");
   setTimeout((function() {
     client.setReady();

@@ -1,4 +1,5 @@
-// var Restaurant = require('./main');
+var Order = require('./order');
+
 
 
 function Waitress(name) {
@@ -6,14 +7,14 @@ function Waitress(name) {
 }
 
 Waitress.prototype.checkClient = function (restaurant) {
+
   for (var i = 0; i < restaurant.tables.length; i++) {
-    if (restaurant.tables[i].eating) {
-      console.log("Buscando la comida para la mesa " + (i+1));
-      setTimeout((function() {
-      }), 10000);
-      
+    if (restaurant.tables[i] == '') {
+      console.log(this.name + " esta buscando comida para la mesa " + (i+1));
+      order = new Order(restaurant, restaurant.tables[i]);
     }
   }
+
 };
 
 module.exports = Waitress;
