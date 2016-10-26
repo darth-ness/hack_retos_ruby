@@ -46,7 +46,7 @@ Waitress.prototype.getMeal = function () {
       restaurant.tables[i][0].eating = true;
       console.log(client + " esta comiendo en la mesa " + (i+1));
       console.log('');
-      sleep(2000);
+      sleep(Math.floor(Math.random() * 6000) + 1000);
       restaurant.tables[i][0].eating = false;
       restaurant.tables[i][0].ready = true;
 
