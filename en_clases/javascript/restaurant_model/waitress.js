@@ -11,6 +11,7 @@ Waitress.prototype.checkClient = function (restaurant) {
       console.log("Buscando la comida para la mesa " + (i+1));
       setTimeout((function() {
       }), 10000);
+      
     }
   }
 };

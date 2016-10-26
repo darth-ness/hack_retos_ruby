@@ -1,18 +1,23 @@
 var Restaurant = require('./restaurant');
 var Client = require('./client');
 var Waitress = require('./waitress');
+var Host = require('./host');
+var Order = require('./order');
 
 
 function main() {
-  client = new Client('John Snow');
-  client.eating = true;
+  ale = new Client('Ale');
+  happy = new Client('Happy');
+  ness = new Client('Ness');
   restaurant = new Restaurant();
-  restaurant.tables[0] = client;
+  restaurant.client_line = [ale, happy, ness];
+
   // restaurant[]
-  waitress = new Waitress('Ramona');
-  waitress.checkClient(restaurant);
-
-
+  // waitress = new Waitress('Scarlet Johansenn');
+  // waitress.checkClient(restaurant);
+  // host = new Host('Margot Robin');
+  // host.checkTables(restaurant);
+  order = new Order (restaurant, restaurant.tables[1]);
 
 }
 
