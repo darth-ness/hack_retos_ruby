@@ -1,0 +1,6 @@
+a.no-click {
+  display: none;
+}
+a.on-click {
+  display: block;
+}
