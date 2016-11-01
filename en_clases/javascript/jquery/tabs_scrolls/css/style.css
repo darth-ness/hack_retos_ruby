@@ -1,0 +1,23 @@
+#orange-sect {
+  background-color: orange;
+  height: 580px;
+}
+#blue-sect {
+  background-color: blue;
+  height: 580px;
+
+}
+#yellow-sect {
+  background-color: yellow;
+  height: 580px;
+
+}
+#red-sect {
+  background-color: red;
+  height: 580px;
+
+}
+.navbar.my-nav {
+  margin-bottom: 0px;
+}
+body { padding-top: 50px; }
