@@ -1,20 +1,20 @@
 #orange-sect {
   background-color: orange;
-  height: 580px;
+  height: 100vh;
 }
 #blue-sect {
   background-color: blue;
-  height: 580px;
+  height: 100vh;
 
 }
 #yellow-sect {
   background-color: yellow;
-  height: 580px;
+  height: 100vh;
 
 }
 #red-sect {
   background-color: red;
-  height: 580px;
+  height: 100vh;
 
 }
 .navbar.my-nav {
