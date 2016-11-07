@@ -1,0 +1,43 @@
+.row {
+  margin-left: 0;
+}
+
+img.street {
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+  margin-left: -15px;
+}
+img.baldosa {
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+}
+img.barra {
+  height: 30vh;
+  width: 100vw;
+  z-index: -1;
+}
+img.plants {
+  height: 30vh;
+  width: 100vw;
+  z-index: -1;
+}
+img.table {
+  height: 30vh;
+  width: 100vw;
+  z-index: -1;
+  margin-bottom: 0;
+}
+.center-hall {
+  height: 40vh;
+}
+.table-hall {
+  height: 40vh;
+}
+.top-street {
+  height: 30vh;
+}
+.center-street {
+  height: 40vh;
+}
