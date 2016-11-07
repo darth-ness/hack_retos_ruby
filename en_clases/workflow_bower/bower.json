@@ -1,0 +1,20 @@
+{
+  "name": "workflow_bower",
+  "homepage": "https://github.com/darth-ness/hack_retos_ruby",
+  "authors": [
+    "Néstor <nestor.arguello@gmail.com>"
+  ],
+  "description": "bower class",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
